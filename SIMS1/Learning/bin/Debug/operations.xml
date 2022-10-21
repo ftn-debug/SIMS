@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<ArrayOfOperation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Operation>
+    <dateAndTime>2015-07-29T05:50:00</dateAndTime>
+    <operationID>1o</operationID>
+    <sala>
+      <availability>true</availability>
+      <inventoryList />
+      <name>111</name>
+    </sala>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>1a</string>
+        <string>2a</string>
+        <string>43</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>2o</string>
+        <string>3o</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Operation>
+  <Operation>
+    <dateAndTime>2015-07-29T05:50:00</dateAndTime>
+    <operationID>1o</operationID>
+    <sala>
+      <availability>true</availability>
+      <inventoryList />
+      <name>111</name>
+    </sala>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>1a</string>
+        <string>2a</string>
+        <string>43</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>2o</string>
+        <string>3o</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Operation>
+  <Operation>
+    <dateAndTime>2015-07-29T05:50:00</dateAndTime>
+    <operationID>1o</operationID>
+    <sala>
+      <availability>true</availability>
+      <inventoryList />
+      <name>111</name>
+    </sala>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>1a</string>
+        <string>2a</string>
+        <string>43</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>2o</string>
+        <string>3o</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Operation>
+  <Operation>
+    <dateAndTime>2021-04-30T17:00:00</dateAndTime>
+    <operationID>43</operationID>
+    <sala>
+      <availability>true</availability>
+      <inventoryList />
+      <name>111</name>
+    </sala>
+    <patient>
+      <name>Pera</name>
+      <lastName>Peric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>43</string>
+        <string>32</string>
+        <string>55</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>43</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Operation>
+</ArrayOfOperation>

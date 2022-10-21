@@ -1,0 +1,66 @@
+﻿<Window x:Class="Learning.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Learning"
+        mc:Ignorable="d"
+        Title="Lekar" Height="450" Width="800"
+        Closing="Window_Closing">
+
+    <Grid Background="#FFD4FBF7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Button x:Name="dodajP" Content="Dodaj "  Click="dodajP_Click_1" Margin="622,118,32,0" Height="32" VerticalAlignment="Top" BorderThickness="1" Foreground="Black" BorderBrush="#FF89CFD3" Background="#FF7DDEC8" Grid.ColumnSpan="2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Izmeni " Click="Button_Click_1" Margin="622,156,32,0" Height="34" VerticalAlignment="Top" BorderThickness="1" Foreground="Black" BorderBrush="#FF89CFD3" Background="#FF7DDEC8" Grid.ColumnSpan="2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Otkazi " Name="otkazi" Click="Button_Click" Margin="622,196,32,0"  Height="36" VerticalAlignment="Top" BorderThickness="1" Foreground="Black" BorderBrush="#FF89CFD3" Background="#FF7DDEC8" Grid.ColumnSpan="2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TabControl Name="tab" HorizontalAlignment="Left" Height="316" Margin="30,66,0,0" VerticalAlignment="Top" Width="569" Grid.ColumnSpan="2">
+            <TabItem Name="tab1" Header="Prikaz svih pregleda">
+
+                <DataGrid Name="preglediPrikaz"  AutoGenerateColumns="False" IsReadOnly="True" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Path=appointmentID}"/>
+                        <DataGridTextColumn Header="Datum i vreme" Binding="{Binding Path=dateAndTime}" />
+                        <DataGridTextColumn Header="Ordinacija" Binding="{Binding Path=ordination.name}" />
+                        <DataGridTextColumn Header="Ime doktora" Binding="{Binding Path=doctor.name}" />
+                        <DataGridTextColumn Header="Prezime doktora" Binding="{Binding Path=doctor.lastName}" />
+                        <DataGridTextColumn Header="Ime pacijenta" Binding="{Binding Path=patient.name}" />
+                        <DataGridTextColumn Header="Prezime pacijenta" Binding="{Binding Path=patient.lastName}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Prikaz svih operacija">
+
+                <DataGrid x:Name="operacijePrikaz"  AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Path=operationID}"/>
+                        <DataGridTextColumn Header="Datum i vreme" Binding="{Binding Path=dateAndTime}" />
+                        <DataGridTextColumn Header="Sala" Binding="{Binding Path=sala.name}" />
+                        <DataGridTextColumn Header="Ime doktora" Binding="{Binding Path=doctor.name}" />
+                        <DataGridTextColumn Header="Prezime doktora" Binding="{Binding Path=doctor.lastName}" />
+                        <DataGridTextColumn Header="Ime pacijenta" Binding="{Binding Path=patient.name}" />
+                        <DataGridTextColumn Header="Prezime pacijenta" Binding="{Binding Path=patient.lastName}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operacije/Pregledi" VerticalAlignment="Top" Margin="131,21,0,0" Width="319" Height="33" FontSize="22" TextDecorations="Underline" TextAlignment="Center" Foreground="#FF187A89" Grid.ColumnSpan="2"/>
+        
+    </Grid>
+</Window>

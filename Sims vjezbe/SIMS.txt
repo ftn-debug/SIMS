@@ -1,0 +1,67 @@
+DOKTOR
+-Zeli podatke o pacijentu, da zakaze pregled, kada i gde se odvijaju pregledi, ko vrsi pregled i sl.
+-Istorija bolesti pacijenta
+-Postoje doktori opste prakse i razni specijalizovani doktori(zavisi od ustanove)
+-Preusmeravanje pacijenta u drugu ustanovu specijalizovanu za tu delatnost
+-Razlicite akcije za 2 vrste doktora
+-Zeli podatke o operacijama, u kojoj sali se izvrsava, kad se izvrsava, pacijent na kome se izvrsava operacija
+-Pamcenje recepta za pacijente, QR recepti
+-Zeli rasporedu zakazivanja pregleda
+-Provera lekova sa recepta od strane lekara kada ih upravnik unese
+-Kriterijum pretrage preko imena,prezimena,maticni br.
+
+SEKRETAR
+-Lekar opste prakse po potrebi izdaje uput kojim se automatski zakazuje termin kod specijaliste
+-Guest account za strance koje nemaju zdravstvene kartone i mogucnost pamcenja u slucaju duzeg boravka
+-Zaduzen za komunikaciju za drugim ustanovama
+-Zeli brzo ispravljanje podataka pacijenata
+-Zeli brzo zakazivanje pregleda i operacija(ako su hitne zeli precicu)
+-Zeli da kazi obavestenja direktno
+-Salje email drugoj ustanovi o prebacenom pacijenti, bilo bi dobro ako bi bili spojeni
+-Stizu pozivi za zakazivanje i usmerava ih lekarima po potrebi
+-Ako se otkaze pregled treba da se osobi za dva dana treba da se pomeri ?
+-Zeli brzu pretragu
+-Vrsi naplacivanje pregleda ako pacijent nema osiguranje
+-Zeli lako pomeranje termina
+-Filtriranje lekova u odnosu na dijagnozu i alergena
+
+UPRAVNIK
+-Saradjivanje sa familijarnom ustanovom, razmenjivanje viska materijala, inventar za materijale, zahtevi za razmenu
+-Razmena pacijenata u slucaju nedostatka prostora ili lekara u slucaju nedostatku lekara 
+-Nije imao mogucnost da vidi tacnu kolicinu materijala u inventaru
+-Samo on sme da menja inventar, lekari i sekretari mogu da vide inventar po salama i potrosene materijale(hteo bi da bude po sali)
+-Zeli da lekar da izvestaj o potrosenim materijalima i da se automatski skine kolicina sa inventara
+-Evidencija o studentima na praksi
+-Definise raspored zaposlenih
+-Plata zaposlenih se racuna preko formule
+-Maloletna lica ne smeju da zakazuju preglede ?
+-Zeli da alergeni pacijenta buud na kartonu
+-Sala moze biti nedostupna zbog renoviranja
+
+PACIJENT
+SIMONA
+-Ne voli da ceka u redu, zeli da zakaze pregled, zeli kod svog doktora da zakaze
+-Notifikacija o pregledu dan pre(preko sms ili vibera)
+-Zeli da promeni vreme zakazanog termina
+-Zeli mogucnost da oceni i preporuci lekare 
+-Zeli da napise nesto o doktoru pored ocene
+-Zeli uvid u svoj zdrastveni karton
+VANJA 
+-Zeli da zakaze termin i da nema otkazivanja za njega
+-Zeli mogucnost da sajt bude na cirilici
+-Zeli da mu se pomeri termin ranije ako je to moguce i da mu iskoci notifikacija u vezi toga
+-Zeli notifikaciju kad i koju kolicinu lekova treba da pije
+
+IT Administrator
+-Treba omoguciti Cloud
+-Ne treba security
+-Zeli dokumentaciju za instaliranje softvera
+-Zeli da ne otkazuje aplikacija
+-Zna da rukuje sa bazama
+-Zeli backup mehanizam(koji bi se skladistio na serveru bolnice)
+-Zeli da je omoguceno online placanje preko paypala ili kriptovalute
+-Zeli opciju logovanja dogadjaja(greske logovanja ili slicno)
+
+-Ako pacijent zakaze i ne pojavi treba da se ukloni ?
+-Zele da se dizajn sajta uklopi sa vizuelnim temama korporacije
+-Treba da ima razmak izmedju termina u slucaju +-

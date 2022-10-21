@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<ArrayOfAppointment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Appointment>
+    <dateAndTime>2015-05-29T05:50:00</dateAndTime>
+    <appointmentID>3a</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>101</name>
+    </ordination>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs />
+      <operationsIDs />
+      <appointments />
+      <operations />
+      <name>Jovan</name>
+      <lastName>Mijatovic</lastName>
+      <doctorID>111</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+  <Appointment>
+    <dateAndTime>2021-04-21T09:30:00</dateAndTime>
+    <appointmentID>43</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>101</name>
+    </ordination>
+    <patient>
+      <name>Miko</name>
+      <lastName>Mikic</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>1a</string>
+        <string>2a</string>
+        <string>43</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>2o</string>
+        <string>3o</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+  <Appointment>
+    <dateAndTime>2015-05-29T05:50:00</dateAndTime>
+    <appointmentID>3a</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>101</name>
+    </ordination>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs />
+      <operationsIDs />
+      <appointments />
+      <operations />
+      <name>Jovan</name>
+      <lastName>Mijatovic</lastName>
+      <doctorID>111</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+  <Appointment>
+    <dateAndTime>2015-05-29T05:50:00</dateAndTime>
+    <appointmentID>3a</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>101</name>
+    </ordination>
+    <patient>
+      <name>Ana</name>
+      <lastName>Maric</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs />
+      <operationsIDs />
+      <appointments />
+      <operations />
+      <name>Jovan</name>
+      <lastName>Mijatovic</lastName>
+      <doctorID>111</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+  <Appointment>
+    <dateAndTime>2021-04-23T10:00:00</dateAndTime>
+    <appointmentID>32</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>103</name>
+    </ordination>
+    <patient>
+      <name>Miko</name>
+      <lastName>Mikic</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>43</string>
+        <string>32</string>
+      </appointmentsIDs>
+      <operationsIDs>
+        <string>2o</string>
+        <string>3o</string>
+      </operationsIDs>
+      <appointments />
+      <operations />
+      <name>Jelena</name>
+      <lastName>Stajic</lastName>
+      <doctorID>109</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+  <Appointment>
+    <dateAndTime>2021-05-07T10:30:00</dateAndTime>
+    <appointmentID>342</appointmentID>
+    <ordination>
+      <availability>true</availability>
+      <inventoryList />
+      <name>103</name>
+    </ordination>
+    <patient>
+      <name>Miko</name>
+      <lastName>Mikic</lastName>
+      <id>0</id>
+      <contact>0</contact>
+      <insurance>false</insurance>
+      <appointment />
+      <Insurance>false</Insurance>
+      <Appointment />
+    </patient>
+    <doctor>
+      <appointmentsIDs>
+        <string>342</string>
+      </appointmentsIDs>
+      <operationsIDs />
+      <appointments />
+      <operations />
+      <name>Maja</name>
+      <lastName>Blagic</lastName>
+      <doctorID>110</doctorID>
+      <Appointments />
+      <Operations />
+    </doctor>
+  </Appointment>
+</ArrayOfAppointment>

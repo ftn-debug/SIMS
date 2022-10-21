@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:model="clr-namespace:WpfApp1.model"
+        mc:Ignorable="d"
+       
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+
+        
+        <Style x:Key="Default" TargetType="Button">
+          
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="Blue"/>
+        </Style>
+        <Style TargetType="Button" x:Key="DiffBtnStyle">
+            <Setter Property="Background" Value="Aquamarine"/>
+            <Setter Property="Foreground" Value="BurlyWood"/>
+        </Style>
+        <Style TargetType="Button" x:Key="ExtendedStyle" BasedOn="{StaticResource ResourceKey=DiffBtnStyle}">
+            <Setter Property="FontWeight" Value="Heavy"/>
+        </Style>
+        <model:Exp x:Key="izrazi">
+            <model:BaseExponentExpression BaseNum="2" Exponent="3"/>
+            <model:BaseExponentExpression BaseNum="76" Exponent="1"/>
+            <model:BaseExponentExpression BaseNum="133" Exponent="2"/>
+        </model:Exp>
+        <DataTemplate DataType="{x:Type model:BaseExponentExpression}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding Path=BaseNum}"/>
+                <TextBlock Text="{Binding Path=Exponent}"
+                           Grid.Column="1" FontSize="8" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+        </DataTemplate>
+    
+    </Window.Resources>
+   
+
+    <Grid ShowGridLines="True">
+      
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+      
+        <Button  Margin="106,44,56,35" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+        
+                    <Setter Property="CornerRadius" Value="50">
+
+                    </Setter>
+                </Style>
+               
+            </Button.Resources>
+        </Button>
+        <Button  Content="Button" HorizontalAlignment="Left" Margin="88,110,0,0" VerticalAlignment="Top" Width="122" Height="44" Grid.Column="1" />
+        <Button Style="{StaticResource DiffBtnStyle}" Content="Button1" Margin="106,116,160,62" Grid.Column="0" />
+        <Grid Grid.Row="1" Grid.Column="1" DataContext="{StaticResource izrazi}">
+            <ListBox ItemsSource="{Binding }" SelectionChanged="ListBox_SelectionChanged"/>
+        </Grid>
+        
+    </Grid>
+   
+</Window>

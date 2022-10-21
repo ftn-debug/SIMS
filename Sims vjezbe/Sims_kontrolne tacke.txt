@@ -1,0 +1,129 @@
+git checkout develop    #if you don't have it already
+git checkout feature/x  #if you don't have it already
+git pull --all
+git merge develop
+
+
+Why do I need empty constructors?
+
+  CalendarDateRange kalendar = new CalendarDateRange(DateTime.MinValue, DateTime.Today.AddDays(-1));
+            datePic.BlackoutDates.Add(kalendar);
+
+
+   datePic.BlackoutDates.Add(new CalendarDateRange(o.dateAndTime, o.dateAndTime))
+
+--- KT0 ---------------------------------------------------------------------------------------
++CRUD
+--- KT1 ---------------------------------------------------------------------------------------
+Upravnik
++ 3.1 - CRUD za statičku opremu
++ 3.2 - CRUD za dinamičku opremu
++ 3.3 - Raspoređivanje statičke opreme po svim tipovima prostorija sa zakazivanjem
++ 3.4 - Raspoređivanje dinamičke opreme
+
+TODO:
+	Omoguci premjestanje iz soba u storage
+	+ Simuliraj dinamicku opremu
+	+ Upravnik (rasporedjivanje opreme po salama) - sequence + CLEAN CODE
+
+--- KT2 ------------------------------------------------------------------------------------------
+Upravnik:
++1) Zakazivanje renoviranja sale ili sobe (Za odgovarajuci period onemogućiti zakazivanje 
+operacija i pregleda u nekoj sali ili odmor pacijenta u sobama za odmor)
+
++ 2) Pretraga i filtriranje opreme (Omoguciti upravniku da brze i jednostavnije odrađuje svoj 
+posao tako sto ce lakse nalaziti opremu)
+
++ 3) CRUD za lekove, sastojke i zamene lekova (Neophodno je uneti sve podatke o nekom leku koji 
+se onda verifikuju od strane lekara)
++ 4) Upravnik (Zakazivanje renoviranja sale ili sobe) - activity dijagram + CLEAN CODE
+
+CRUD je i za sastojke i za lekove. Lek sadrži listu sastojaka, naziv, dodajte možda i neki opis.
+Ne postoji strogo ograničenje koji lek zamenjuje koji, tj. što se nas tiče, može bilo koji lek 
+da zameni bilo koji 
+
+
+TODO:
+IZMIJENI ne radi kod dole liste
+Ingredients se automatski mijenja i nema veze sa potvrdi
+//approved true
+++ ZAMENE lekova
+++ KOMENTARI   
+
+
+
+
+----------------------------------------------------------------------
+
+ ///ToList will always create a new list, which will not reflect any subsequent changes to the collection.
+           /// However, it will reflect changes to the objects themselves
+
+ void DataWindow_Closing( object sender, CancelEventArgs e)
+        {
+        //     _timer.Stop();
+       //      _timer.Dispose();
+
+CHECK THIS OUT
+<Window x:Class="WpfApplication4.Window1"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Window1" Height="300" Width="300">
+<Window.Resources>
+    <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="{x:Type TextBoxBase}">
+        <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10"> 
+            <ScrollViewer x:Name="PART_ContentHost"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+            </Trigger>
+            <Trigger Property="Width" Value="Auto">
+                <Setter Property="MinWidth" Value="100"/>
+            </Trigger>
+            <Trigger Property="Height" Value="Auto">
+                <Setter Property="MinHeight" Value="20"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+</Window.Resources>
+<Grid>
+    <TextBox Template="{StaticResource TextBoxBaseControlTemplate}" Height="25" Margin="5"></TextBox>
+</Grid>
+
+
+
+
+Akcija = prosta operacija
+Aktivnost = skup akcija, slozena akcija
+
+Kompozitna Aktivnost = skup aktivnosti opisan na zasebnom dijagramu 
+	ex: kupovina hrane
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+Za MenuStyle:
+
+       <StackPanel ClipToBounds="True"
+                                Orientation="Vertical"
+                                IsItemsHost="True" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+		
+	
+Za MenuItem:
+
+	  <Setter Property="Template">
+         <Setter.Value>
+           <ControlTemplate TargetType="MenuItem">
+	<!-- pa ide Grif, Border[Gradient] -->
+	<ContentPresenter x:Name="IconPresenter"  ContentSource="Icon"/>
+         <ContentPresenter ContentSource="Header"
+            Margin="7, 1, 7, 1" Grid.Column="1" />
+
+Control template:		
+	
+         <ControlTemplate.Triggers>
+               <Trigger Property="IsMouseOver" Value="True">
+                      <Setter TargetName="MenuItemBorder" Property="Background" Value="#FFA05F91" />
+                 </Trigger>
+Bindovana akcija za property Checker
+
+   <Style TargetType="{x:Type ListViewItem}">
+                                <Setter Property="IsSelected" Value="{Binding isSelected , UpdateSourceTrigger=PropertyChanged}" />
+
+
+                   <DataTrigger Binding="{Binding Path=Checker}" Value="True">
+                        <DataTrigger.EnterActions>
+                             <BeginStoryboard>
+                                 <Storyboard>
+                                      <DoubleAnimation Duration="0:0:1" Storyboard.TargetProperty="Width" From="33" To="150" />
+                                    </Storyboard>
+                               </BeginStoryboard>
+                          </DataTrigger.EnterActions>
+                     </DataTrigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+    </Setter.Value>
+   </Setter>
+ </Style>
+ HyperLinkovi:
+<Setter.Value>
+                                    <ControlTemplate>
+                                        <ControlTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                                                
+                                            </DataTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
